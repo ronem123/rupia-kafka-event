@@ -7,7 +7,7 @@
 Thumbs.db
 
 # Local Gradle properties (credentials!)
-.gradle.properties
+gradle.properties
 
 # Gradle
 .gradle/

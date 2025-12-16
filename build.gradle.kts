@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "com.rupia.kafka"
-version = "1.0.0"
+version = "1.0.5"
 
 repositories {
     mavenCentral()
@@ -35,8 +35,8 @@ publishing {
             name = "GitHubPackages"
             url = uri("https://maven.pkg.github.com/ronem123/rupia-kafka-event")
             credentials {
-                username = project.findProperty("gpr.user") as String? ?: System.getenv("GITHUB_USERNAME")
-                password = project.findProperty("gpr.token") as String? ?: System.getenv("GITHUB_TOKEN")
+                username = project.findProperty("gpr.user").toString()
+                password = project.findProperty("gpr.token").toString()
             }
         }
     }
